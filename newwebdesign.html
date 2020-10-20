@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+     *{box-sizing: border-box;}
+    body{margin: 0px;font-family: 'segoe ui';}
+    header{width: 100%;height: 90px;background-color: black;color: white;}
+    .nav_btn{display: none;}
+    .nav_links{text-align:center;text-decoration: none;font-size:18px;margin: 0px auto;max-width: 1000px;background-color: rgb(255, 0, 157);}
+    .nav_links a{display: inline-block;padding: 13px 10px 13px 10px;text-decoration: none;color: #002e5b;text-align: center;}
+    .nav_links a:hover{background-color: #002e5b;color: #fde428;}
+    #nav_check{display: none}
+    @media(max-width: 600px){
+        .nav_btn{display:inline-block;position: absolute;top:0;right: 0;}
+        .nav_btn label{display: inline-block;width: 50px;height: 50px;padding: 13px;}
+        .nav_btn label:hover{background-color: #e9d226;}
+        .nav_btn label span{display: block;width: 25px;height: 10px;border-top:2px solid #09d8f3}
+        .nav_links{position: absolute;display: block;width: 100%;background-color: #e9dd26;height: 0px;transition:0.3s all ease-in-out;overflow-y:hidden;top:50px;left:0}
+        .nav_links a{display: block;width: 100%;text-align: center;}
+        #nav_check:not(:checked) + .nav_links{height: 0px;}
+        #nav_check:checked + .nav_links{height: 52vh;overflow-y: auto;}
+        .title{text-align: center;font-size: 20px;padding: 10px;}
+    }
+        </style>
+</head>
+<body>
+    <header>
+
+        <div class="title">title goes here</div>
+        <div class="nav_btn">
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </div>
+        
+
+    </header>
+    jubdvid ebueb
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new web design2</title>
+    <style type="text/css">
+
+    .title-logo{display: none;}
+    #selectpage{display: none;}
+
+     *{box-sizing: border-box;}
+    body{margin: 0px;font-family: 'segoe ui';}
+    header{width: 100%;height: 90px;background-color: black;color: white;}
+    .nav_btn{display: none;}
+    .nav_links{text-align:center;text-decoration: none;font-size:18px;margin: 0px auto;max-width: 1000px;font-weight: bold;color:white}
+    .nav_links a{display: inline-block;padding: 13px 10px 13px 10px;text-decoration: none;color: #002e5b;text-align: center;color:white}
+    .nav_links a:hover{color: coral;}
+    #nav_check{display: none}
+    @media(max-width: 1000px){
+        .nav_btn{display:inline-block;position: absolute;top:40px;right: 0;}
+        .nav_btn label{display: inline-block;width: 50px;height: 50px;padding: 13px;}
+        .nav_btn label:hover{background-color: #e9d226;}
+        .nav_btn label span{display: block;width: 25px;height: 10px;border-top:2px solid #2ee609}
+        .nav_links{position: absolute;display: block;width: 100%;background-color: #e9dd26;height: 0px;transition:0.3s all ease-in-out;overflow-y:hidden;top:90px;left:0}
+        .nav_links span{width: 100%;text-align: center;}
+        .nav_links span a{display: block;width: 100%;text-align: center;}
+
+        #nav_check:not(:checked) + .nav_links{height: 0px;}
+        #nav_check:checked + .nav_links{height: 52vh;overflow-y: auto;}
+       
+        .title-logo{text-align: center;display: inherit;}
+       .first-nav span{display: none}
+       #selectpage{display: inherit;}
+     
+    }
+
+
+
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title-logo"><span style="font-size: 25px;font-weight: bold;color: coral">TEXTBOOK</span>
+            <span style="font-size: 35px;color: white;">4</span>
+            <span style="font-size: 25px;color: coral">ME</span></div>
+
+
+
+
+
+        
+            <div style="margin-top: 10px;margin-left: 50px;font-weight: bold;" id="selectpage">Select Page</div>
+        <div class="nav_btn">
+            
+            <label for="nav_check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <input type="checkbox" name="" id="nav_check">
+        <div class="nav_links">
+           <span class="first-nav"> 
+                <a href="#">Home full pg</a>
+                <a href="#">Home full pg</a>
+                <span style="font-size: 25px;font-weight: bold;color: coral">TEXTBOOK</span>
+                <span style="font-size: 35px;color: white;">4</span>
+                <span style="font-size: 25px;color: coral">ME</span>
+                <a href="#">Home full pg</a>
+                <a href="#">Home full pg</a>
+                <a href="#">Home fullpg</a>
+            </span>
+           
+        </div>
+        
+        
+    </header>
+
+
+    <div style="background-color: lightcoral;width: 1518px;">ubdcbdb</div>
+</body>
+</html>
