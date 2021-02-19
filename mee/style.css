@@ -1,0 +1,172 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+}
+body{
+    font-family: montserrat;
+}
+/*--menu*/
+
+
+
+
+
+
+
+
+nav{
+background:white;
+height:80px;
+width:100%;
+    }
+label.logo{
+    color:black;
+    font-size: 35px;
+    line-height: 80px;
+    padding:0 100px;
+    font-weight:bold;
+}
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:rgb(8, 43, 83);
+    font-size: 17px;
+    padding:7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+a:hover{
+    background:#1b96ff;
+    transition: .5s;
+    color:white;
+}
+.checkbtn{
+    font-size:30px;
+    color:rgb(99, 97, 97);
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    
+   .nav-links ul{
+        position: absolute;
+       
+        width: 100%;
+        height:auto;
+        background:#2c3e50;
+        top:143px;
+        left:-100%;
+        text-align:center;
+        transition:all .5s;
+    }
+    nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color:white;
+    }
+    a:hover,a.active{
+        background:none;
+        color:#0082e6;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    background-color: white;
+    height: calc(100vh);
+}
+
+
+
+
+.menu-bar{background: linear-gradient(navy,silver);}
+.menu-bar ul li{padding: 20px;margin-left: 40px;color:white;font-size: 20px;}
+.lang-img{width:30px;height: 20px;}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display:block;
+    position: absolute;
+   
+    background-color: #0082e6;
+   
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:10px;
+    border-bottom:1px dotted #fff;
+    background:transparent;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#b2ff00;
+}
+
+
+.menu-bar ul li:hover .sub-menu-1 ul li a{
+    color:white;
+}
+
+
+.body-hor-des{height:100px;width:100%}
+.body-hor-des-inner{background: url(rainfall-web.jpg) no-repeat;background-size: cover; height: 100%;width: 100%;}
+.body-hor-des-text{font-size: 25px;color: rgb(242, 245, 67);margin-left: 60px;padding-top: 25px;}

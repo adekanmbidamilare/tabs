@@ -1,0 +1,230 @@
+<html>
+<head>
+<title>key2</title>
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/ADEKANMBI%20DAMILARE/Desktop/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
+
+<style type="text/css">
+input{width: 100px;margin-left: 20px;height: 30px;padding:3px;border-radius: 5px;border: 1px solid black;}
+
+.nav_title{background-color: black;padding: 20px}
+.inner-nav-title{color: skyblue;font-size: 20px;font-family: serif;font-size: xx-large;}
+
+.horizontal-nav{max-width: 1000px;margin: 0px auto;color: white;margin-top: -70px;margin-bottom: 50px}
+.horizontal-nav ul{display: flex;list-style:none;margin-left: 40px;}
+.horizontal-nav ul li{margin-left: 70px;border-bottom: 2px solid aqua}
+.horizontal-nav ul li:hover{background-color: rgb(122, 223, 223);}
+.horizontal-nav ul li{padding: 15px;border-radius: 8px;}
+ul a{text-decoration: none;color: white;}
+.main-section-container{margin-top: -45px;}
+
+.container{margin-top: 0px;line-height: 30px;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;color: black;margin-left: 260px;padding: 5px;}
+
+.cont-one{-ms-flex: 65%;flex:65%;background-color: blue;text-align: center;}
+.cont-two{-ms-flex: 30%;flex:30%;text-align: center;}
+
+
+
+
+*{box-sizing:border-box;}
+body{margin:0;font-family:'segoe ui';background-color:rgb(247, 240, 247)}
+
+.nav{height:50%;background-color:rgb(223, 206, 250);position: absolute;padding-top: 10px;}
+.nav .nav_header{display:inline;}
+.nav .nav_header .nav_title{display:inline-block;font-size:22px;color:white;padding:10px;}
+.nav .nav_btn{display:none;}
+.nav .nav_links{display:block;float:left;font-size:18px;overflow: auto;height: 100%;}
+.nav .nav_links a{display:block;padding:5px;width: 250px;color:white;text-align:center;color: black;margin-bottom:20px;border-radius: 8px;}
+.nav .nav_links a:hover{background-color:#002e5b;color:#fde428;}
+.nav #nav_check{display:none;}
+@media (max-width:1000px){
+.nav .nav_btn{display:inline-block;position:absolute;top:0;right:0;}
+.nav .nav_btn label{display:inline-block;width:50px;height:50px;padding:13px}
+.nav .nav_btn label:hover{background-color:rgb(11, 189, 243);}
+
+/*how to draw the button check*/
+.nav .nav_btn label span{display:block;width:25px;height:8px;border-top:2px solid rgb(12, 6, 12);}
+/*it ends here*/
+
+.nav .nav_links{position:absolute;display:block;width:100%;background-color:rgb(247, 247, 245);height:100%;transition:0.3s all ease-in-out;overflow-y:hidden;top:40px;left:0}
+.nav .nav_links a{display:block;width:100%;text-align:center;}
+
+.nav .nav_links .tab_trigger ul{display:inline-block;position:absolute;top:0;right:0;width:100%}
+.nav .nav_links .tab_trigger ul li{margin-bottom: 5px;}
+.nav .nav_links .tab_trigger ul li label:hover{background: black;}
+
+/*what makes it function*/
+.nav #nav_check:not(:checked) + .nav_links{height:0px;}
+.nav #nav_check:checked + .nav_links{height:52vh;overflow-y:auto;}
+/*what makes it function ends here*/
+
+.horizontal-nav{background-color: rgb(94, 99, 104);color: white;overflow: auto;margin-top:initial ;}
+.hor{max-width: 700px;margin: 0px auto;}
+.horizontal-nav ul{list-style: none;display: flex;padding: 0px;margin:15px}
+.horizontal-nav ul li{padding: 15px;border-radius: 8px;border-bottom: 2px solid aqua;}
+.horizontal-nav ul li:hover{background-color: skyblue;}
+.nav{height:40px;background-color:rgb(242, 240, 245);position: absolute;width:100%;}
+.nav_btn.nav_check{max-width: 1000px;}
+.nav_check span{margin-right: 20px;}
+
+.nav_title{background-color: black;height: 80px}
+.inner-nav-title{max-width: 300px;margin: 0px auto;color: skyblue;font-family: serif;font-size: xx-large;text-align: center;}
+.last-footer{flex-direction: column;}
+.container{margin-left: 0px;flex-direction: column;}
+.cont-one{background-color: crimson;margin-top: 10px}
+.cont-two{background-color: rgb(177, 165, 165);margin-top: 2px;}
+}
+
+
+
+
+
+
+.section-intro{padding-top: 40px;padding-bottom: 20px;margin-bottom: 20px;
+margin: 5px;padding-left: 10px;padding-right: 10px;font-size: 40px;}
+
+.welcome-section{background-color: skyblue;padding-top: 40px;padding-bottom: 20px;margin-bottom: 20px;
+margin: 5px;padding-left: 10px;padding-right: 10px;}
+
+.welcome-section2{margin: 5px;padding-left: 10px;padding-right: 10px;}
+
+footer{background-color: rgb(52, 53, 54);color: white;text-align: right;padding: 30px;}
+
+
+.last-main-footer{background-color: black}
+.footer-container{max-width: 1000px;margin: 0px auto}
+.last-footer{display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;color: white;padding: 30px;}
+
+.footer1{-ms-flex: 33px;flex:33px}
+.footer2{-ms-flex: 33px;flex:33px}
+.footer3{-ms-flex: 33px;flex:33px}
+
+.push{height: 100px;width: 100px;background-color: firebrick;transition: all 0.2s ease-in-out;
+    cursor: pointer;float: right;}
+    .push:hover{   transform: scale(1.05, 1.05)}
+    </style>
+</head>
+<body>
+
+    <div class="nav_header">
+        <div class="nav_title"><div class="inner-nav-title">Webkey</div></div>
+        </div>
+        
+        <div class="horizontal-nav">
+           <div class="hor">
+            <ul><a href="index.html"><li>HOME</li></a>
+                <a href="comment.html"><li>COMMENT</li></a>
+                <a href="contact.html"><li>CONTACT</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                </ul>
+           </div>
+        </div>
+        <div class="main-section-container">
+
+            <div class="nav">
+                    <div class="nav_btn">
+                    <label for="nav_check">
+                 
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                    </label>
+                    </div>
+                    <input type="checkbox" name="" id="nav_check">
+                    <div class="nav_links">
+                    
+                    
+                    
+                    
+                    
+                        <a href="programming.html">Introduction / How to create a simple website page</a>
+                        <a href="displaycattwo.php">How to align your div at the center page</a>
+                        <a href="displaycatone.php">How to make your website responsive to fit mobile screen</b></a>
+                        <a href="displaycattwo.php">Form validation (using Js)</a>
+                        <a href="displaycattwo.php">How to print a form</a>
+                        <a href="displaycattwo.php">How to upload data in database (using php)</a>
+                        <a href="displaycattwo.php">How to display data stored from database (using php)</a>
+                        <a href="displaycattwo.php">How to add search to web, displaying result in same page of your input field</a>
+                        <a href="displaycattwo.php">How to add search to web, displaying result in another page to input field</a>
+                        <a href="displaycattwo.php">How to search two MYSQL database tables at a time using a keyword & display result</a>
+                        <a href="displaycattwo.php">How to create file downloading website / How to upload, display, delete and download file from MYSQL database</a>
+                        <a href="displaycattwo.php">How to increase the import file size of MYSQL phpMyAdmin</a>
+                        <a href="displaycattwo.php">How to upload your project on GitHub</a>
+                        <a href="displaycattwo.php">Others Category2</a>
+                        
+
+                        
+                    
+                    
+                    
+                    
+                        
+                    
+                    
+                    
+                    
+                    </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="cont-one">
+                                <h2>11 cont onecont onecont onecont onecont onecont onecont onecont onecont onecont o
+                                cont onecont onecont onecont onecont onecont onecont onecont onecont onecont onecont onecont one
+                                cont onecont onecont onecont onecont
+                                <!--advert code also goes here at the center--> 
+                                onecont onecont onecont onecont onecont one
+                                cont onecont onecont onecont onecont onecont onecont onecont onecont one
+                                necont onecont onecont onecont onecont onecont onecont onecont onecont onecont onecont onecont
+                                onecont onecont onecont onecont onecont onecont onecont onecont one</h2>
+                        </div>
+                        <div class="cont-two">
+                                <h2>cont two</h2>
+                                <!--advert code also goes here-->
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div> 
+        
+      
+                <div class="last-main-footer">
+                 <div class="footer-container">
+                     <div class="last-footer">
+                         <div class="footer1">
+                          DOCS<br/>
+                          Getting Started<br/>
+                          Tutorial<br/>
+                          Components and APIs<br/>
+                          More Resourses
+                         </div>
+                         <div class="footer2">
+                             Community<br/>
+                             Who's using React Native<br/>
+                             Ask Question On Stack Over<br/>
+                             Contributor Guide<br/>
+                             Contributor Guide<br/>
+                             DEV community
+                          </div>
+                      <div class="footer3">
+                           MORE RESOURSES<br/>
+                           Blog<br/>
+                           Twitter<br/>
+                           Github<br/>
+                           React  
+                      </div>
+                     </div>
+                 </div>
+                </div>
+                
+                                 
+         
+         
+             </body>
+             </html>

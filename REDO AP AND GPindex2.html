@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>REDO AP AND GP</title>
+
+
+
+<style type="text/css">
+
+.hor{margin-top: -83px;}
+.horizontal-nav{max-width: 1000px;margin: 0px auto;color: black;overflow:auto;}
+.horizontal-nav ul{display: flex;list-style:none;margin-left: 40px;}
+.horizontal-nav ul li{margin-right: 50px;}
+.horizontal-nav ul li:hover{background-color: rgb(122, 223, 223);}
+.horizontal-nav ul li{padding: 15px;border-radius: 8px;}
+ul a{text-decoration: none;color: black;}
+
+ .nav_headerr{}
+ .nav_headerr .nav_titlee{height: 70px;display:inline-block;font-size:22px;color:aqua;width: 100%;padding:10px;background-color: white;}
+
+
+
+
+
+
+
+
+
+
+
+*{box-sizing:border-box;}
+body{margin:0;font-family:'segoe ui';}
+.nav{width:100%;height:50px;background-color:indigo;position:fixed;}
+.nav .nav_header{display:inline;}
+.nav .nav_header .nav_title{display:inline-block;font-size:22px;color:white;padding:10px;}
+.nav .nav_btn{display:none;}
+.nav .nav_links{display:inline;float:right;font-size:18px;}
+.nav .nav_links a{display:inline-block;padding:13px 10px 13px 10px;text-decoration:none;color:white;text-align:center;}
+.nav .nav_links a:hover{background-color:#002e5b;color:#fde428;}
+.nav #nav_check{display:none;}
+@media (max-width:600px){
+.nav .nav_btn{display:inline-block;position:absolute;top:0;right:0;}
+.nav .nav_btn label{display:inline-block;width:50px;height:50px;padding:13px}
+.nav .nav_btn label:hover{background-color:white;}
+.nav .nav_btn label span{display:block;width:25px;height:10px;border-top:2px solid violet;}
+.nav .nav_links{position:absolute;display:block;width:100%;background-color:purple;height:0px;transition:0.3s all ease-in-out;overflow-y:hidden;top:50px;left:0}
+.nav .nav_links a{display:block;width:100%;text-align:center;}
+.nav #nav_check:not(:checked) + .nav_links{height:0px;}
+.nav #nav_check:checked + .nav_links{height:52vh;overflow-y:auto;}}
+</style>
+</head>
+
+<body>
+	<div class="nav_headerr">
+        <div class="nav_titlee">B..</div>
+    </div>
+	<div class="hor">
+        <div class="horizontal-nav" >
+            <ul><a href="index.html"><li><i class="fas fa-home"></i>HOME</li></a>
+                <a href="comment.php"><li><i class="fas fa-arrow-alt-circle-down"></i>COMMENT</li></a>
+                <a href="news.html"><li><i class="fas fa-align-justify"></i>NEWS</li></a>
+                <a href="contact.html"><li><i class="fas fa-address-book"></i>CONTACT</li></a>
+                <a href="about.html"><li><i class="fas fa-info-circle"></i>ABOUT</li></a>
+            </ul>
+        </div>
+    </div>
+<div class="nav">
+	<div class="nav_header">
+		<div class="nav_title"><form action="search.php" method="GET" ><input book="search" type="text" id="search" name='search' placeholder="search.." style="width:70%;height:30px"><button type="submit" style="padding: 7px;background-color: silver;color:rgb(120, 241, 245);margin-top:-10px;border-radius: 3px;border: none;">>></button></form></div>
+	</div>
+	<div class="nav_btn">
+		<label for="nav_check">
+		<span></span>
+		<span></span>
+		<span></span>
+		</label>
+	</div>
+	<input type="checkbox" name="" id="nav_check">
+	<div class="nav_links">
+		<a href="#Home">Home</a>
+		<a href="#A.P">A.P</a>
+		<a href="#G.P">G.P</a>
+	</div>
+	<div class="cc">God is good</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
